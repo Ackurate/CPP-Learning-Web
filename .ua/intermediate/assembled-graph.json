@@ -1,0 +1,277 @@
+{
+  "version": "1.0.0",
+  "project": {
+    "name": "CPP-Learning-Web",
+    "languages": ["javascript", "markdown", "json", "sql", "html", "yaml"],
+    "frameworks": ["React", "Vite", "Express"],
+    "description": "A beginner-focused web app for learning programming fundamentals and quiz-based lessons.",
+    "analyzedAt": "2026-09-30T00:00:00.000Z",
+    "gitCommitHash": "7f9b15197e25875f4572c3783bfe5b7f4deca88b"
+  },
+  "nodes": [
+    {
+      "id": "document:README.md",
+      "type": "document",
+      "name": "README",
+      "filePath": "README.md",
+      "summary": "Project overview and onboarding guidance for the learning platform.",
+      "tags": ["documentation", "learning", "onboarding"]
+    },
+    {
+      "id": "document:docs/api-docs.md",
+      "type": "document",
+      "name": "API docs",
+      "filePath": "docs/api-docs.md",
+      "summary": "Reference material for the backend API and endpoints used by the learning website.",
+      "tags": ["documentation", "api", "reference"]
+    },
+    {
+      "id": "config:backend/package.json",
+      "type": "config",
+      "name": "backend package",
+      "filePath": "backend/package.json",
+      "summary": "Node.js configuration for the Express backend and runtime dependencies.",
+      "tags": ["config", "backend", "express"]
+    },
+    {
+      "id": "config:frontend/package.json",
+      "type": "config",
+      "name": "frontend package",
+      "filePath": "frontend/package.json",
+      "summary": "Vite and React configuration for the client-side learning interface.",
+      "tags": ["config", "frontend", "vite"]
+    },
+    {
+      "id": "file:backend/src/server.js",
+      "type": "file",
+      "name": "server entry",
+      "filePath": "backend/src/server.js",
+      "summary": "Starts the Express API, applies middleware, and exposes the app on the configured port.",
+      "tags": ["server", "api", "express"]
+    },
+    {
+      "id": "file:backend/src/app.js",
+      "type": "file",
+      "name": "app bootstrap",
+      "filePath": "backend/src/app.js",
+      "summary": "Bootstraps the HTTP app and mounts backend route groups for chapters, questions, progress, and AI features.",
+      "tags": ["bootstrap", "routes", "api"]
+    },
+    {
+      "id": "file:backend/src/routes/auth.routes.js",
+      "type": "file",
+      "name": "auth routes",
+      "filePath": "backend/src/routes/auth.routes.js",
+      "summary": "Handles user authentication and account-related endpoints.",
+      "tags": ["routes", "auth", "api"]
+    },
+    {
+      "id": "file:backend/src/routes/chapter.routes.js",
+      "type": "file",
+      "name": "chapter routes",
+      "filePath": "backend/src/routes/chapter.routes.js",
+      "summary": "Exposes chapter and lesson content endpoints for the learning curriculum.",
+      "tags": ["routes", "chapters", "content"]
+    },
+    {
+      "id": "file:backend/src/services/quiz.service.js",
+      "type": "file",
+      "name": "quiz service",
+      "filePath": "backend/src/services/quiz.service.js",
+      "summary": "Encapsulates quiz generation and answer-evaluation logic for the learning flow.",
+      "tags": ["service", "quiz", "logic"]
+    },
+    {
+      "id": "file:frontend/src/main.jsx",
+      "type": "file",
+      "name": "frontend entry",
+      "filePath": "frontend/src/main.jsx",
+      "summary": "Bootstraps the React application and mounts the root component into the DOM.",
+      "tags": ["frontend", "react", "entry"]
+    },
+    {
+      "id": "file:frontend/src/App.jsx",
+      "type": "file",
+      "name": "app shell",
+      "filePath": "frontend/src/App.jsx",
+      "summary": "Defines the top-level application shell and navigation between lesson, dashboard, and quiz views.",
+      "tags": ["frontend", "navigation", "ui"]
+    },
+    {
+      "id": "file:frontend/src/pages/HomePage.jsx",
+      "type": "file",
+      "name": "home page",
+      "filePath": "frontend/src/pages/HomePage.jsx",
+      "summary": "Shows the landing page and entry points for the learning experience.",
+      "tags": ["page", "landing", "education"]
+    },
+    {
+      "id": "file:frontend/src/pages/QuizPage.jsx",
+      "type": "file",
+      "name": "quiz page",
+      "filePath": "frontend/src/pages/QuizPage.jsx",
+      "summary": "Provides the interactive quiz flow and answer handling for practice sessions.",
+      "tags": ["page", "quiz", "interaction"]
+    },
+    {
+      "id": "schema:database/schema.sql",
+      "type": "schema",
+      "name": "database schema",
+      "filePath": "database/schema.sql",
+      "summary": "Defines the relational schema that persists chapters, questions, user progress, and lesson data.",
+      "tags": ["database", "schema", "sql"]
+    },
+    {
+      "id": "file:database/seeds/questions.sql",
+      "type": "file",
+      "name": "seed data",
+      "filePath": "database/seeds/questions.sql",
+      "summary": "Seeding script that loads initial question and chapter content into the database.",
+      "tags": ["database", "seed", "content"]
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:README.md",
+      "target": "file:frontend/src/main.jsx",
+      "type": "documents",
+      "weight": 0.5
+    },
+    {
+      "source": "document:README.md",
+      "target": "file:backend/src/server.js",
+      "type": "documents",
+      "weight": 0.5
+    },
+    {
+      "source": "config:backend/package.json",
+      "target": "file:backend/src/server.js",
+      "type": "configures",
+      "weight": 0.6
+    },
+    {
+      "source": "config:frontend/package.json",
+      "target": "file:frontend/src/main.jsx",
+      "type": "configures",
+      "weight": 0.6
+    },
+    {
+      "source": "file:backend/src/server.js",
+      "target": "file:backend/src/app.js",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:backend/src/app.js",
+      "target": "file:backend/src/routes/auth.routes.js",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:backend/src/app.js",
+      "target": "file:backend/src/routes/chapter.routes.js",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:backend/src/app.js",
+      "target": "file:backend/src/services/quiz.service.js",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/main.jsx",
+      "target": "file:frontend/src/App.jsx",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/App.jsx",
+      "target": "file:frontend/src/pages/HomePage.jsx",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/App.jsx",
+      "target": "file:frontend/src/pages/QuizPage.jsx",
+      "type": "imports",
+      "weight": 0.7
+    },
+    {
+      "source": "schema:database/schema.sql",
+      "target": "file:backend/src/services/quiz.service.js",
+      "type": "defines_schema",
+      "weight": 0.8
+    },
+    {
+      "source": "file:database/seeds/questions.sql",
+      "target": "schema:database/schema.sql",
+      "type": "migrates",
+      "weight": 0.7
+    },
+    {
+      "source": "document:docs/api-docs.md",
+      "target": "file:backend/src/routes/chapter.routes.js",
+      "type": "documents",
+      "weight": 0.5
+    }
+  ],
+  "layers": [
+    {
+      "id": "layer:documentation",
+      "name": "Documentation",
+      "description": "Root documentation and reference materials that explain the product and API surface.",
+      "nodeIds": ["document:README.md", "document:docs/api-docs.md"]
+    },
+    {
+      "id": "layer:frontend",
+      "name": "Frontend Interface",
+      "description": "The user-facing React application and page components for learning and quiz flows.",
+      "nodeIds": ["config:frontend/package.json", "file:frontend/src/main.jsx", "file:frontend/src/App.jsx", "file:frontend/src/pages/HomePage.jsx", "file:frontend/src/pages/QuizPage.jsx"]
+    },
+    {
+      "id": "layer:backend",
+      "name": "Backend API",
+      "description": "The server, route handlers, and service logic that provide the learning platform's data and quiz operations.",
+      "nodeIds": ["config:backend/package.json", "file:backend/src/server.js", "file:backend/src/app.js", "file:backend/src/routes/auth.routes.js", "file:backend/src/routes/chapter.routes.js", "file:backend/src/services/quiz.service.js"]
+    },
+    {
+      "id": "layer:data",
+      "name": "Data Layer",
+      "description": "The persisted schema and seed content that underpins the app's learning material and progress storage.",
+      "nodeIds": ["schema:database/schema.sql", "file:database/seeds/questions.sql"]
+    }
+  ],
+  "tour": [
+    {
+      "order": 1,
+      "title": "Project overview",
+      "description": "Start with the README to understand the platform goal and its main learning workflow.",
+      "nodeIds": ["document:README.md"]
+    },
+    {
+      "order": 2,
+      "title": "Frontend entry point",
+      "description": "Inspect the React bootstrapping code and application shell to see how the user experience is mounted.",
+      "nodeIds": ["file:frontend/src/main.jsx", "file:frontend/src/App.jsx"]
+    },
+    {
+      "order": 3,
+      "title": "Learning pages",
+      "description": "Review the landing page and interactive quiz flow to understand how the user engages with course material.",
+      "nodeIds": ["file:frontend/src/pages/HomePage.jsx", "file:frontend/src/pages/QuizPage.jsx"]
+    },
+    {
+      "order": 4,
+      "title": "Backend API",
+      "description": "Follow the Express server and app bootstrap to see how routes and services are assembled for chapter and quiz data.",
+      "nodeIds": ["file:backend/src/server.js", "file:backend/src/app.js", "file:backend/src/routes/chapter.routes.js"]
+    },
+    {
+      "order": 5,
+      "title": "Data model",
+      "description": "Inspect the SQL schema and seed files to understand how lessons, questions, and user data are persisted.",
+      "nodeIds": ["schema:database/schema.sql", "file:database/seeds/questions.sql"]
+    }
+  ]
+}

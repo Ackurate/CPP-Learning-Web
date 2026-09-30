@@ -1,0 +1,619 @@
+{
+  "schemaVersion": 1,
+  "algorithm": "louvain",
+  "totalFiles": 74,
+  "totalBatches": 5,
+  "exportsByPath": {
+    "ai-testing/results/.gitkeep": [],
+    "ai-testing/run-accuracy-test.js": [],
+    "backend/src/app.js": [],
+    "backend/src/config/db.js": [],
+    "backend/src/config/env.js": [],
+    "backend/src/controllers/.gitkeep": [],
+    "backend/src/middlewares/auth.middleware.js": [],
+    "backend/src/middlewares/error.middleware.js": [],
+    "backend/src/middlewares/validate.middleware.js": [],
+    "backend/src/models/.gitkeep": [],
+    "backend/src/routes/ai.routes.js": [],
+    "backend/src/routes/auth.routes.js": [],
+    "backend/src/routes/chapter.routes.js": [],
+    "backend/src/routes/progress.routes.js": [],
+    "backend/src/routes/question.routes.js": [],
+    "backend/src/routes/quiz.routes.js": [],
+    "backend/src/server.js": [],
+    "backend/src/services/ai.service.js": [],
+    "backend/src/services/progress.service.js": [],
+    "backend/src/services/quiz.service.js": [],
+    "backend/src/utils/.gitkeep": [],
+    "database/migrations/.gitkeep": [],
+    "docs/architecture/.gitkeep": [],
+    "docs/mockups/.gitkeep": [],
+    "docs/report/.gitkeep": [],
+    "docs/slides/.gitkeep": [],
+    "frontend/src/App.jsx": [],
+    "frontend/src/components/layout/Footer.jsx": [],
+    "frontend/src/components/layout/Header.jsx": [],
+    "frontend/src/data/chapters.js": [
+      "chapters"
+    ],
+    "frontend/src/main.jsx": [],
+    "frontend/src/pages/ChapterListPage.jsx": [],
+    "frontend/src/pages/DashboardPage.jsx": [],
+    "frontend/src/pages/HomePage.jsx": [],
+    "frontend/src/pages/LessonPage.jsx": [],
+    "frontend/src/pages/LoginPage.jsx": [],
+    "frontend/src/pages/QuizPage.jsx": [],
+    "frontend/src/pages/RegisterPage.jsx": [],
+    "frontend/src/pages/VisualizationPage.jsx": [],
+    "frontend/src/services/aiService.js": [],
+    "frontend/src/services/api.js": [],
+    "frontend/src/services/authService.js": [],
+    "frontend/src/services/quizService.js": [],
+    "frontend/src/visualizations/ArrayViz.jsx": [],
+    "frontend/src/visualizations/LoopViz.jsx": [],
+    "frontend/src/visualizations/RecursionViz.jsx": [],
+    "frontend/src/visualizations/SortingViz.jsx": [],
+    "frontend/src/visualizations/TreeGraphViz.jsx": [],
+    "frontend/vite.config.js": []
+  },
+  "batches": [
+    {
+      "batchIndex": 1,
+      "files": [
+        {
+          "path": "AGENTS.md",
+          "language": "markdown",
+          "sizeLines": 155,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "DESIGN.md",
+          "language": "markdown",
+          "sizeLines": 736,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "README.md",
+          "language": "markdown",
+          "sizeLines": 2,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "skills-lock.json",
+          "language": "json",
+          "sizeLines": 17,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "AGENTS.md": [],
+        "DESIGN.md": [],
+        "README.md": [],
+        "skills-lock.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 2,
+      "files": [
+        {
+          "path": "frontend/.oxlintrc.json",
+          "language": "json",
+          "sizeLines": 8,
+          "fileCategory": "config"
+        },
+        {
+          "path": "frontend/README.md",
+          "language": "markdown",
+          "sizeLines": 16,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "frontend/index.html",
+          "language": "html",
+          "sizeLines": 18,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "frontend/package.json",
+          "language": "json",
+          "sizeLines": 24,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "frontend/.oxlintrc.json": [],
+        "frontend/README.md": [],
+        "frontend/index.html": [],
+        "frontend/package.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 3,
+      "files": [
+        {
+          "path": ".agents/skills/design-taste-frontend/SKILL.md",
+          "language": "markdown",
+          "sizeLines": 1206,
+          "fileCategory": "docs"
+        },
+        {
+          "path": ".agents/skills/web-design-guidelines/SKILL.md",
+          "language": "markdown",
+          "sizeLines": 39,
+          "fileCategory": "docs"
+        },
+        {
+          "path": ".aider-desk/skills/design-taste-frontend/SKILL.md",
+          "language": "markdown",
+          "sizeLines": 1206,
+          "fileCategory": "docs"
+        },
+        {
+          "path": ".aider-desk/skills/web-design-guidelines/SKILL.md",
+          "language": "markdown",
+          "sizeLines": 39,
+          "fileCategory": "docs"
+        },
+        {
+          "path": ".github/workflow/ci.yml",
+          "language": "yaml",
+          "sizeLines": 0,
+          "fileCategory": "config"
+        },
+        {
+          "path": "ai-testing/results/.gitkeep",
+          "language": "unknown",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "ai-testing/run-accuracy-test.js",
+          "language": "javascript",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "ai-testing/test-questions.json",
+          "language": "json",
+          "sizeLines": 1,
+          "fileCategory": "config"
+        },
+        {
+          "path": "backend/.env.example",
+          "language": "config",
+          "sizeLines": 0,
+          "fileCategory": "config"
+        },
+        {
+          "path": "backend/package.json",
+          "language": "json",
+          "sizeLines": 19,
+          "fileCategory": "config"
+        },
+        {
+          "path": "backend/src/app.js",
+          "language": "javascript",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "backend/src/config/db.js",
+          "language": "javascript",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "backend/src/config/env.js",
+          "language": "javascript",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "backend/src/controllers/.gitkeep",
+          "language": "unknown",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "backend/src/middlewares/auth.middleware.js",
+          "language": "javascript",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "backend/src/middlewares/error.middleware.js",
+          "language": "javascript",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "backend/src/middlewares/validate.middleware.js",
+          "language": "javascript",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "backend/src/models/.gitkeep",
+          "language": "unknown",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "backend/src/promts/explainLesson.txt",
+          "language": "txt",
+          "sizeLines": 0,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "backend/src/promts/hintWrongAnswer.txt",
+          "language": "txt",
+          "sizeLines": 0,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "backend/src/routes/ai.routes.js",
+          "language": "javascript",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "backend/src/routes/auth.routes.js",
+          "language": "javascript",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "backend/src/routes/chapter.routes.js",
+          "language": "javascript",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "backend/src/routes/progress.routes.js",
+          "language": "javascript",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "backend/src/routes/question.routes.js",
+          "language": "javascript",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        ".agents/skills/design-taste-frontend/SKILL.md": [],
+        ".agents/skills/web-design-guidelines/SKILL.md": [],
+        ".aider-desk/skills/design-taste-frontend/SKILL.md": [],
+        ".aider-desk/skills/web-design-guidelines/SKILL.md": [],
+        ".github/workflow/ci.yml": [],
+        "ai-testing/results/.gitkeep": [],
+        "ai-testing/run-accuracy-test.js": [],
+        "ai-testing/test-questions.json": [],
+        "backend/.env.example": [],
+        "backend/package.json": [],
+        "backend/src/app.js": [],
+        "backend/src/config/db.js": [],
+        "backend/src/config/env.js": [],
+        "backend/src/controllers/.gitkeep": [],
+        "backend/src/middlewares/auth.middleware.js": [],
+        "backend/src/middlewares/error.middleware.js": [],
+        "backend/src/middlewares/validate.middleware.js": [],
+        "backend/src/models/.gitkeep": [],
+        "backend/src/promts/explainLesson.txt": [],
+        "backend/src/promts/hintWrongAnswer.txt": [],
+        "backend/src/routes/ai.routes.js": [],
+        "backend/src/routes/auth.routes.js": [],
+        "backend/src/routes/chapter.routes.js": [],
+        "backend/src/routes/progress.routes.js": [],
+        "backend/src/routes/question.routes.js": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 4,
+      "files": [
+        {
+          "path": "backend/src/routes/quiz.routes.js",
+          "language": "javascript",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "backend/src/server.js",
+          "language": "javascript",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "backend/src/services/ai.service.js",
+          "language": "javascript",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "backend/src/services/progress.service.js",
+          "language": "javascript",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "backend/src/services/quiz.service.js",
+          "language": "javascript",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "backend/src/utils/.gitkeep",
+          "language": "unknown",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "database/migrations/.gitkeep",
+          "language": "unknown",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "database/schema.sql",
+          "language": "sql",
+          "sizeLines": 0,
+          "fileCategory": "data"
+        },
+        {
+          "path": "database/seeds/chapters.sql",
+          "language": "sql",
+          "sizeLines": 0,
+          "fileCategory": "data"
+        },
+        {
+          "path": "database/seeds/questions.sql",
+          "language": "sql",
+          "sizeLines": 0,
+          "fileCategory": "data"
+        },
+        {
+          "path": "docs/api-docs.md",
+          "language": "markdown",
+          "sizeLines": 0,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "docs/architecture/.gitkeep",
+          "language": "unknown",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "docs/mockups/.gitkeep",
+          "language": "unknown",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "docs/report/.gitkeep",
+          "language": "unknown",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "docs/slides/.gitkeep",
+          "language": "unknown",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "docs/user-guide.md",
+          "language": "markdown",
+          "sizeLines": 0,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "frontend/src/App.jsx",
+          "language": "javascript",
+          "sizeLines": 17,
+          "fileCategory": "code"
+        },
+        {
+          "path": "frontend/src/components/layout/Footer.jsx",
+          "language": "javascript",
+          "sizeLines": 22,
+          "fileCategory": "code"
+        },
+        {
+          "path": "frontend/src/components/layout/Header.jsx",
+          "language": "javascript",
+          "sizeLines": 74,
+          "fileCategory": "code"
+        },
+        {
+          "path": "frontend/src/data/chapters.js",
+          "language": "javascript",
+          "sizeLines": 58,
+          "fileCategory": "code"
+        },
+        {
+          "path": "frontend/src/index.css",
+          "language": "css",
+          "sizeLines": 136,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "frontend/src/main.jsx",
+          "language": "javascript",
+          "sizeLines": 10,
+          "fileCategory": "code"
+        },
+        {
+          "path": "frontend/src/pages/ChapterListPage.jsx",
+          "language": "javascript",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "frontend/src/pages/DashboardPage.jsx",
+          "language": "javascript",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "frontend/src/pages/HomePage.css",
+          "language": "css",
+          "sizeLines": 1138,
+          "fileCategory": "markup"
+        }
+      ],
+      "batchImportData": {
+        "backend/src/routes/quiz.routes.js": [],
+        "backend/src/server.js": [],
+        "backend/src/services/ai.service.js": [],
+        "backend/src/services/progress.service.js": [],
+        "backend/src/services/quiz.service.js": [],
+        "backend/src/utils/.gitkeep": [],
+        "database/migrations/.gitkeep": [],
+        "database/schema.sql": [],
+        "database/seeds/chapters.sql": [],
+        "database/seeds/questions.sql": [],
+        "docs/api-docs.md": [],
+        "docs/architecture/.gitkeep": [],
+        "docs/mockups/.gitkeep": [],
+        "docs/report/.gitkeep": [],
+        "docs/slides/.gitkeep": [],
+        "docs/user-guide.md": [],
+        "frontend/src/App.jsx": [],
+        "frontend/src/components/layout/Footer.jsx": [],
+        "frontend/src/components/layout/Header.jsx": [],
+        "frontend/src/data/chapters.js": [],
+        "frontend/src/index.css": [],
+        "frontend/src/main.jsx": [],
+        "frontend/src/pages/ChapterListPage.jsx": [],
+        "frontend/src/pages/DashboardPage.jsx": [],
+        "frontend/src/pages/HomePage.css": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 5,
+      "files": [
+        {
+          "path": "frontend/src/pages/HomePage.jsx",
+          "language": "javascript",
+          "sizeLines": 249,
+          "fileCategory": "code"
+        },
+        {
+          "path": "frontend/src/pages/LessonPage.jsx",
+          "language": "javascript",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "frontend/src/pages/LoginPage.jsx",
+          "language": "javascript",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "frontend/src/pages/QuizPage.jsx",
+          "language": "javascript",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "frontend/src/pages/RegisterPage.jsx",
+          "language": "javascript",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "frontend/src/pages/VisualizationPage.jsx",
+          "language": "javascript",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "frontend/src/services/aiService.js",
+          "language": "javascript",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "frontend/src/services/api.js",
+          "language": "javascript",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "frontend/src/services/authService.js",
+          "language": "javascript",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "frontend/src/services/quizService.js",
+          "language": "javascript",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "frontend/src/visualizations/ArrayViz.jsx",
+          "language": "javascript",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "frontend/src/visualizations/LoopViz.jsx",
+          "language": "javascript",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "frontend/src/visualizations/RecursionViz.jsx",
+          "language": "javascript",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "frontend/src/visualizations/SortingViz.jsx",
+          "language": "javascript",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "frontend/src/visualizations/TreeGraphViz.jsx",
+          "language": "javascript",
+          "sizeLines": 0,
+          "fileCategory": "code"
+        },
+        {
+          "path": "frontend/vite.config.js",
+          "language": "javascript",
+          "sizeLines": 7,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "frontend/src/pages/HomePage.jsx": [],
+        "frontend/src/pages/LessonPage.jsx": [],
+        "frontend/src/pages/LoginPage.jsx": [],
+        "frontend/src/pages/QuizPage.jsx": [],
+        "frontend/src/pages/RegisterPage.jsx": [],
+        "frontend/src/pages/VisualizationPage.jsx": [],
+        "frontend/src/services/aiService.js": [],
+        "frontend/src/services/api.js": [],
+        "frontend/src/services/authService.js": [],
+        "frontend/src/services/quizService.js": [],
+        "frontend/src/visualizations/ArrayViz.jsx": [],
+        "frontend/src/visualizations/LoopViz.jsx": [],
+        "frontend/src/visualizations/RecursionViz.jsx": [],
+        "frontend/src/visualizations/SortingViz.jsx": [],
+        "frontend/src/visualizations/TreeGraphViz.jsx": [],
+        "frontend/vite.config.js": []
+      },
+      "neighborMap": {}
+    }
+  ]
+}

@@ -1,16 +1,18 @@
 import { useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { useAuth } from '../../context/AuthContext.jsx'
 
 const navigation = [
-  { label: 'Bài học', href: '#bai-hoc' },
-  { label: 'Luyện tập', href: '#luyen-tap' },
-  { label: 'Trực quan', href: '#truc-quan' },
-  { label: 'Hỏi AI', href: '#hoi-ai' },
+  { label: 'Bài học', href: '/#bai-hoc' },
+  { label: 'Luyện tập', href: '/#luyen-tap' },
+  { label: 'Trực quan', href: '/#truc-quan' },
+  { label: 'Hỏi AI', href: '/#hoi-ai' },
 ]
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const menuButtonRef = useRef(null)
+  const { user, isAuthenticated, logout } = useAuth()
 
   function closeMenu() {
     setIsMenuOpen(false)
@@ -59,12 +61,23 @@ function Header() {
             ))}
           </ul>
           <div className="primary-navigation__actions">
-            <Link className="button button--outline button--small" to="/login" onClick={closeMenu}>
-              Đăng nhập
-            </Link>
-            <Link className="button button--primary button--small" to="#bai-hoc" onClick={closeMenu}>
-              Bắt đầu học
-            </Link>
+            {isAuthenticated ? (
+              <>
+                <span className="auth-header-user" title={user.name}>{user.name}</span>
+                <button className="button button--outline button--small" type="button" onClick={logout}>
+                  Đăng xuất
+                </button>
+              </>
+            ) : (
+              <>
+                <Link className="button button--outline button--small" to="/login" onClick={closeMenu}>
+                  Đăng nhập
+                </Link>
+                <Link className="button button--primary button--small" to="/register" onClick={closeMenu}>
+                  Bắt đầu học
+                </Link>
+              </>
+            )}
           </div>
         </nav>
       </div>
